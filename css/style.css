@@ -138,7 +138,7 @@ h6 {
 }
 
 .tab:hover {
-    background: #7f66ff;
+    background: #f82249;
     color: #ffffff;
 }
 
@@ -147,7 +147,7 @@ h6 {
 }
 
 .tab.active {
-    background: #7f66ff;
+    background: #f82249;
     color: #ffffff;
 }
 
@@ -261,7 +261,7 @@ h6 {
 }
 
 .tab1:hover {
-    background: #7f66ff;
+    background: #f82249;
     color: #ffffff;
 }
 
@@ -270,7 +270,7 @@ h6 {
 }
 
 .tab1.active {
-    background: #7f66ff;
+    background: #f82249;
     color: #ffffff;
 }
 
