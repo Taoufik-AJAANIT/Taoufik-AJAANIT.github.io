@@ -99,6 +99,125 @@ h6 {
   color: #fff;
 }
 
+/*********************************
+8. Tabs Section
+*********************************/
+
+.tabs_section
+{
+	background: #ffffff;
+	padding-top: 103px;
+	padding-bottom: 71px;
+}
+.tabs_container
+{
+	margin-top: 80px;
+}
+.tab
+{
+	height: 57px;
+	background: #f5f8fb;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	font-size: 16px;
+	color: #0a2642;
+	font-weight: 500;
+	line-height: 57px;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	margin-bottom: 6px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.tab:hover
+{
+	background: #7f66ff;
+	color: #ffffff;
+}
+.tab:not(:last-child)
+{
+	margin-right: 6px;
+}
+.tab.active
+{
+	background: #7f66ff;
+	color: #ffffff;
+}
+.tab_panels
+{
+	padding-top: 55px;
+	padding-bottom: 32px;
+}
+.tab_panel
+{
+	display: none !important;
+	width: 100%;
+	height: 100%;
+	-webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.tab_panel.active
+{
+	display: block !important;
+}
+.tab_panel_content p:last-of-type
+{
+	margin-bottom: 0;
+}
+.tab_title
+{
+	margin-top: 24px;
+}
+.tab_text
+{
+	margin-top: 20px;
+}
+.tab_text p
+{
+	-webkit-transform: translateY(8px);
+	-moz-transform: translateY(8px);
+	-ms-transform: translateY(8px);
+	-o-transform: translateY(8px);
+	transform: translateY(8px);
+}
+.tab_image
+{
+	width: 100%;
+}
+.tab_image img
+{
+	max-width: 100%;
+}
+.tab_link
+{
+	margin-top: 35px;
+}
+.tab_link a
+{
+	font-size: 14px;
+	font-weight: 700;
+	color: #7f66ff;
+	text-decoration: underline;
+}
+.tab_link a:hover
+{
+	color: #ff9000;
+}
+
 /* Sections Header
 --------------------------------*/
 
