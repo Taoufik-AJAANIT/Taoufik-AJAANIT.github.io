@@ -693,15 +693,60 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
     width: 100%;
     height: 100vh;
-    background: url(../img/intro-bg.jpg) top center;
+    /* background: url(../img/intro-bg.jpg) top center; */
     background-size: cover;
     overflow: hidden;
     position: relative;
 }
 
+
+/* sliderr : */
+
+
+.home_slider_dots_container
+{
+	position: absolute;
+	left: 0;
+	bottom: 27px;
+	width: 100%;
+	z-index: 1;
+}
+.home_slider_custom_dot:not(:last-child)
+{
+	margin-right: 3px;
+}
+.home_slider_custom_dot
+{
+	width: 43px;
+	height: 43px;
+	background: transparent;
+	text-align: center;
+	line-height: 43px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.home_slider_custom_dot.active,
+.home_slider_custom_dot:hover
+{
+	background: #7f66ff;
+}
+.home_slider .owl-dots
+{
+	display: none;
+}
+
+
+
 #intro:before {
     content: "";
-    background: rgba(6, 12, 34, 0.8);
+    background: rgba(6, 12, 34, 0.5);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1801,9 +1846,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 1024px) {
-    #intro {
+    /* #intro {
         background-attachment: fixed;
-    }
+    } */
     #about {
         background-attachment: fixed;
     }
