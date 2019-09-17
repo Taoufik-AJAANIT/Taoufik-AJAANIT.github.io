@@ -70,6 +70,15 @@ h6 {
 }
 
 
+.alignnone{
+    position: fixed;
+    z-index: 999;
+    width: 50%;
+    height: 50%;
+    top : 30%;
+    right : 30%
+}
+
 /* Back to top button */
 
 .back-to-top {
