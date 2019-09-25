@@ -57,9 +57,36 @@ jQuery(document).ready(function($) {
       });
     }
   }
+  function initTabs2() {
+    if ($(".tab2").length) {
+      $(".tab2").on("click", function() {
+        $(".tab2").removeClass("active");
+        $(this).addClass("active");
+        var clickedIndex = $(".tab2").index(this);
+
+        var panels = $(".tab_panel2");
+        panels.removeClass("active");
+        $(panels[clickedIndex]).addClass("active");
+      });
+    }
+  }
+  function initTabs3() {
+    if ($(".tab3").length) {
+      $(".tab3").on("click", function() {
+        $(".tab3").removeClass("active");
+        $(this).addClass("active");
+        var clickedIndex = $(".tab3").index(this);
+
+        var panels = $(".tab_panel3");
+        panels.removeClass("active");
+        $(panels[clickedIndex]).addClass("active");
+      });
+    }
+  }
   initHomeSlider();
-  initTabs();
   initTabs1();
+  initTabs2();
+  initTabs3();
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -76,12 +103,12 @@ jQuery(document).ready(function($) {
   // Header fixed on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $("#header").addClass("header-scrolled");
+      // $("#header").addClass("header-scrolled");
       // $(".wp-image-1975").removeClass("alignnone");
       $(".wp-image-1975").addClass("wow");
       // addClass;
     } else {
-      $("#header").removeClass("header-scrolled");
+      // $("#header").removeClass("header-scrolled");
       // $(".wp-image-1975").addClass("alignnone");
       $(".wp-image-1975").removeClass("wow");
     }

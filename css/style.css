@@ -111,6 +111,37 @@ h6 {
     color: #fff;
 }
 
+/* Workshop button */
+.go-to-workshop {
+    position: fixed;
+    /* display: none; */
+    background: rgba(6, 12, 34, 0.8);
+    color: #fff;
+    width: 110px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    left: 15px;
+    bottom: 15px;
+    transition: background 0.5s ease-in-out;
+}
+
+.go-to-workshop i {
+    font-size: 24px;
+    padding-top: 6px;
+}
+
+.go-to-workshop:focus {
+    background: #e0072f;
+    color: #fff;
+    outline: none;
+}
+
+.go-to-workshop:hover {
+    background: rgba(6, 12, 34, 1);
+    color: #fff;
+}
+
 
 /*********************************
 8. Tabs Section
@@ -290,6 +321,98 @@ h6 {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
 }
+.tab_panels2 {
+    /* padding-top: 55px; */
+    padding-bottom: 32px;
+}
+
+.tab2 {
+    height: 57px;
+    background: #f5f8fb;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #0a2642;
+    font-weight: 500;
+    line-height: 57px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 6px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.tab2:hover {
+    background: #f82249;
+    color: #ffffff;
+}
+
+.tab2:not(:last-child) {
+    margin-right: 6px;
+}
+
+.tab2.active {
+    background: #f82249;
+    color: #ffffff;
+}
+
+.tab_panel2 {
+    display: none !important;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+.tab_panels3 {
+    /* padding-top: 55px; */
+    padding-bottom: 32px;
+}
+
+.tab3 {
+    height: 57px;
+    background: #f5f8fb;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #0a2642;
+    font-weight: 500;
+    line-height: 57px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 6px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.tab3:hover {
+    background: #f82249;
+    color: #ffffff;
+}
+
+.tab3:not(:last-child) {
+    margin-right: 6px;
+}
+
+.tab3.active {
+    background: #f82249;
+    color: #ffffff;
+}
+
+.tab_panel3 {
+    display: none !important;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
 
 
 /* Fade in tabs */
@@ -313,6 +436,13 @@ h6 {
 }
 
 .tab_panel1.active {
+    display: block !important;
+}
+
+.tab_panel2.active {
+    display: block !important;
+}
+.tab_panel3.active {
     display: block !important;
 }
 
