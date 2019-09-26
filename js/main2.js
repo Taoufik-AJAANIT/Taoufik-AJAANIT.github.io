@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
     $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
     return false;
   });
-
+  $("#header").addClass("header-scrolled");
   // Header fixed on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

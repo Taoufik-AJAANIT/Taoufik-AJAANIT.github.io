@@ -2144,7 +2144,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         padding: 15px 0;
         transition: all 0.5s;
     }
-    #nav-menu-container {
+    #nav-menu-container,#roof {
         display: none;
     }
     #mobile-nav-toggle {
