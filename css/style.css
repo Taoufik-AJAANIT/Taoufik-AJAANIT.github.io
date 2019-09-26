@@ -495,7 +495,7 @@ h6 {
 
 #header {
     height: 90px;
-    padding: 25px 0;
+    /* padding: 25px 0; */
     position: fixed;
     left: 0;
     top: 0;
@@ -504,11 +504,36 @@ h6 {
     z-index: 997;
 }
 
+#roof {
+    color: #fff;
+    font-size: 14px;
+  }
+  #roof .info-bar-address {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  #roof .quick-contacts {
+    float: right;
+  }
+  #roof .quick-contacts span {
+    margin-right: 10px;
+    line-height: 40px;
+  }
+  #roof .quick-contacts a {
+    color: #fff;
+  }
+  #roof .quick-contacts i {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+
 #header.header-scrolled,
 #header.header-fixed {
     background: rgba(6, 12, 34, 0.98);
-    height: 70px;
-    padding: 15px 0;
+    height: 90px;
+    /* padding: 15px 0; */
     transition: all 0.5s;
 }
 
@@ -734,6 +759,7 @@ h6 {
 #mobile-nav-toggle i {
     color: #fff;
 }
+
 
 
 /* Mobile Nav Styling */
@@ -1799,7 +1825,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets #buy-ticket-modal .btn:hover {
     background-color: #e0072f;
 }
-
+ 
+.contact{
+    background: #f82249;;
+    width: 100%;
+    top: 0%
+}
 
 /*--------------------------------------------------------------
 # Contact Section

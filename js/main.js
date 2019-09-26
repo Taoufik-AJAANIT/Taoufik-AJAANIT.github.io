@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
     $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
     return false;
   });
-
+  $("#header").addClass("header-scrolled");
   // Header fixed on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -81,7 +81,7 @@ jQuery(document).ready(function($) {
       $(".wp-image-1975").addClass("wow");
       // addClass;
     } else {
-      $("#header").removeClass("header-scrolled");
+      // $("#header").removeClass("header-scrolled");
       // $(".wp-image-1975").addClass("alignnone");
       $(".wp-image-1975").removeClass("wow");
     }
